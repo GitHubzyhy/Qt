@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../build-simple_gui-Desktop_Qt_6_5_1_MinGW_64_bit-Debug/image/down.png</file>
+        <file>../build-simple_gui-Desktop_Qt_6_5_1_MinGW_64_bit-Debug/image/up-arrow.png</file>
+    </qresource>
+</RCC>

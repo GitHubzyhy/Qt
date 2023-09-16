@@ -1,0 +1,5 @@
+*.pro.user 
+CMakeLists.txt.user
+# 忽略以 build开头的的文件
+build*/
+

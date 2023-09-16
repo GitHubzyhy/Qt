@@ -1,0 +1,108 @@
+
+/*背景颜色*/
+QWidget #centralwidget{background-color:#5D8CAE;}
+
+/*QTreeWidget的颜色*/
+QTreeWidget{ background-color: rgb(187, 225, 250);}
+
+QPushButton
+{
+    border-radius: 6px;/*圆角边框*/
+    color: #fff;
+    background-color: #1abc9c;
+    font-size: 20px;
+    font-family: "华文行楷";
+    width: 80;
+    height: 40;
+} 
+
+/*登录界面按钮样式设置*/
+QPushButton[login_btn="login"]:hover
+{
+
+    background-color: #FFAFBD;
+
+}
+
+QPushButton[login_btn="login"]:pressed
+{
+    background-color:#85ef47;
+} 
+/*登录界面头像设置*/
+QLabel#lb_head
+{
+
+    border-radius:25px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*主界面的按钮样式：qt编译器中选中多个按钮按下旁边的+号添加一个bnt属性（string）：main*/
+QPushButton[main_btn="main"]
+{
+    background-color:#6ddabe ; color: rgb(255, 255, 255);
+} 
+
+/*主界面按钮鼠标在按钮上的时候的效果*/
+QPushButton[main_btn="main"]:hover
+{
+    background-color: #FFAFBD;
+} 
+
+/*主界面按钮鼠标点击的时候的效果*/
+QPushButton[main_btn="main"]:pressed
+{
+    background-color:#85ef47;
+} 
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*主界面的退出按钮样式设置*/
+QPushButton[main_btn_exit="main"]
+{
+    background-color: #fc5185;
+}
+
+QPushButton[main_btn_exit="main"]:hover
+{
+    background-color: #29c6cd;
+}
+
+
+QPushButton[main_btn_exit="main"]:pressed
+{
+    background-color: #b1e1ff;
+} 
+
+QLable
+{
+    color: #34495e;
+}
+
+ QLineEdit
+{
+    border-radius: 6px;/*圆角边框*/
+    border: 2px solid #bdc3c7;
+    min-height: 12;
+    width: 150;
+    height: 20;
+} 
+
+/*表格头样式*/
+QHeaderView::section
+{
+    color:black;
+    font:bold 14px "微软雅黑";
+    text-align: center;
+    height: 32px;
+    background-color: #d1dff0;
+    border:1px solid #8faac9;
+    border-left:none;
+} 
+
+ QTableWidget#tableWidget{border:1px solid gray;}
+
+ QLabel#lb_cnt
+ {
+    font-size: 15px;
+    font-weight: bold;
+    color:#fc5185;
+ }

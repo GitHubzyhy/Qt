@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>login.png</file>
+        <file>student.png</file>
+        <file>right.png</file>
+        <file>add.png</file>
+        <file>login_load.gif</file>
+        <file>progress_load.gif</file>
+        <file>headGraph.jpg</file>
+        <file>stuqss.css</file>
+    </qresource>
+</RCC>

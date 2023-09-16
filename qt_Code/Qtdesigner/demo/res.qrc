@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../forms/widget.ui</file>
+    </qresource>
+</RCC>
