@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cell.png</file>
+        <file>images/exit.png</file>
+        <file>images/rowColumn.png</file>
+        <file>images/title.png</file>
+    </qresource>
+</RCC>

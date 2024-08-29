@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>648</width>
+    <height>387</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>648</width>
+    <height>387</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTableView" name="tableView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="act_rest"/>
+   <addaction name="act_stm_open"/>
+   <addaction name="act_stm_save"/>
+   <addaction name="act_dat_open"/>
+   <addaction name="act_dat_save"/>
+   <addaction name="separator"/>
+   <addaction name="act_addRow"/>
+   <addaction name="act_insertRow"/>
+   <addaction name="act_deleteRow"/>
+   <addaction name="act_exit"/>
+  </widget>
+  <action name="act_rest">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/reset.png</normaloff>:/images/reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>表格复位</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="act_stm_open">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/open.png</normaloff>:/images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开stm文件</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="act_stm_save">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/save1.png</normaloff>:/images/save1.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存stm文件</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="act_dat_open">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/open2.png</normaloff>:/images/open2.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开dat文件</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="act_dat_save">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/save2.png</normaloff>:/images/save2.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存dat文件</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="act_addRow">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/add.png</normaloff>:/images/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加行</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="act_insertRow">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/insert.png</normaloff>:/images/insert.png</iconset>
+   </property>
+   <property name="text">
+    <string>插入行</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="act_deleteRow">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/delete.png</normaloff>:/images/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除行</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="act_exit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/exit.png</normaloff>:/images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>act_exit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

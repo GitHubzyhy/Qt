@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/exit.png</file>
+        <file>images/flush.png</file>
+        <file>images/zoomIn.png</file>
+        <file>images/zoomOut.png</file>
+        <file>images/reset.png</file>
+        <file>images/lineChart.png</file>
+        <file>images/axis.png</file>
+        <file>images/chart.png</file>
+        <file>images/curve.png</file>
+    </qresource>
+</RCC>

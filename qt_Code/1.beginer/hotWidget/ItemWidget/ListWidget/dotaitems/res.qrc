@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/fgfh.jpg</file>
+        <file>image/odef.jpg</file>
+        <file>image/rman.jpg</file>
+        <file>image/afac.jpg</file>
+        <file>image/ajen.jpg</file>
+        <file>image/belv.jpg</file>
+        <file>image/bgst.jpg</file>
+        <file>image/brac.jpg</file>
+    </qresource>
+</RCC>

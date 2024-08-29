@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/mainwindow/1.png</file>
+        <file>images/mainwindow/2.png</file>
+        <file>images/mainwindow/3.png</file>
+        <file>images/mainwindow/4.png</file>
+        <file>images/mainwindow/background.jpg</file>
+        <file>images/mainwindow/exit.png</file>
+        <file>images/QFormDoc/close.png</file>
+        <file>images/QFormDoc/copy.png</file>
+        <file>images/QFormDoc/cut.png</file>
+        <file>images/QFormDoc/cycles.png</file>
+        <file>images/QFormDoc/font.png</file>
+        <file>images/QFormDoc/open.png</file>
+        <file>images/QFormDoc/paste.png</file>
+        <file>images/QFormDoc/reset.png</file>
+        <file>images/QFormTable/rowColumn.png</file>
+        <file>images/QFormTable/title.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cascade.png</file>
+        <file>images/close.png</file>
+        <file>images/copy.png</file>
+        <file>images/cut.png</file>
+        <file>images/film-distribution.png</file>
+        <file>images/font.png</file>
+        <file>images/news.png</file>
+        <file>images/open.png</file>
+        <file>images/paste.png</file>
+        <file>images/Tiled.png</file>
+        <file>images/exit.png</file>
+    </qresource>
+</RCC>

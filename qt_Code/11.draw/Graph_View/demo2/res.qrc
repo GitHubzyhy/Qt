@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Back.png</file>
+        <file>images/Circle.png</file>
+        <file>images/delete.png</file>
+        <file>images/Ellipse.png</file>
+        <file>images/Front.png</file>
+        <file>images/Group.png</file>
+        <file>images/GroupBreak.png</file>
+        <file>images/Line.png</file>
+        <file>images/Pixmap.png</file>
+        <file>images/Polygon.png</file>
+        <file>images/quit.png</file>
+        <file>images/Rect.png</file>
+        <file>images/restore.png</file>
+        <file>images/rotateleft.png</file>
+        <file>images/rotateright.png</file>
+        <file>images/Text.png</file>
+        <file>images/Triangle.png</file>
+        <file>images/ZoomIn.png</file>
+        <file>images/ZoomOut.png</file>
+    </qresource>
+</RCC>
