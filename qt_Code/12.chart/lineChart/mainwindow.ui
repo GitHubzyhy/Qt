@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>813</width>
+    <height>581</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout" columnstretch="0,1">
+    <item row="0" column="0">
+     <widget class="QToolBox" name="toolBox">
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="page_1">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-21</y>
+         <width>214</width>
+         <height>444</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/images/chart.png</normaloff>:/images/chart.png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>图表设置Chart</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2" rowstretch="1,2,2,1" rowminimumheight="0,0,0,0">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_legend">
+          <property name="title">
+           <string>标题</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="QLineEdit" name="lineEdit_title">
+             <property name="minimumSize">
+              <size>
+               <width>110</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="btn_set">
+             <property name="minimumSize">
+              <size>
+               <width>51</width>
+               <height>21</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>设置</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QPushButton" name="btn_titleFont">
+             <property name="text">
+              <string>设置标题字体</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox_legend_2">
+          <property name="title">
+           <string>图例</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="rBtn_Up">
+             <property name="text">
+              <string>上方</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="rBtn_Down">
+             <property name="text">
+              <string>下方</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="rBtn_Left">
+             <property name="text">
+              <string>左侧</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QRadioButton" name="rBtn_Right">
+             <property name="text">
+              <string>右侧</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="checkBox_legend">
+             <property name="text">
+              <string>图例可见</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QCheckBox" name="checkBox_legendBG">
+             <property name="text">
+              <string>图例背景可见</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="pBtn_Font">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>21</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>字体</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="pBtn_legendcolor">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>21</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>标签颜色</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QGroupBox" name="groupBox_legend_3">
+          <property name="title">
+           <string>边距</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_19">
+           <item row="2" column="1">
+            <widget class="QSpinBox" name="spinBox_Left"/>
+           </item>
+           <item row="3" column="1">
+            <widget class="QSpinBox" name="spinBox_Right"/>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_MarginUp">
+             <property name="text">
+              <string>上边距</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_MarginRight">
+             <property name="text">
+              <string>右边距</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="spinBox_Up"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_MarginDown">
+             <property name="text">
+              <string>下边距</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="spinBox_Down"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_MarginLeft">
+             <property name="text">
+              <string>左边距</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0" colspan="2">
+            <widget class="QPushButton" name="pBtn_setMargin">
+             <property name="text">
+              <string>设置边距</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QGroupBox" name="groupBox_legend_4">
+          <property name="title">
+           <string>动画效果</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4" columnstretch="0,0">
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboBox_motion">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>20</height>
+              </size>
+             </property>
+             <item>
+              <property name="text">
+               <string>NoAnimation</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>GridAxisAnimations</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>SeriesAnimations</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>AllAnimations</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_theme">
+             <property name="text">
+              <string>主题</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_motion">
+             <property name="text">
+              <string>动画效果</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboBox_theme">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>20</height>
+              </size>
+             </property>
+             <item>
+              <property name="text">
+               <string>Light</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>BlueCerulean</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Dark</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>BrownSand</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>BlueNcs</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>新建项目</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>新建项目</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>新建项目</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>205</width>
+         <height>405</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/images/curve.png</normaloff>:/images/curve.png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>曲线设置Series</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6" rowstretch="1,3,2,1">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>操作曲线</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="sin_curve">
+             <property name="text">
+              <string>sin曲线</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="cos_curve">
+             <property name="text">
+              <string>cos曲线</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>曲线外观</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="0" column="0" colspan="2">
+            <widget class="QPushButton" name="pBtn_name">
+             <property name="text">
+              <string>曲线名称</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLineEdit" name="line_name"/>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QPushButton" name="pBtn_color">
+             <property name="text">
+              <string>曲线颜色</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QPushButton" name="pBtn_pen">
+             <property name="text">
+              <string>曲线笔( 线条类型)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QCheckBox" name="checkBox_curve">
+             <property name="text">
+              <string>曲线可见</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QCheckBox" name="checkBox_data">
+             <property name="text">
+              <string>数据点可见</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_transparency">
+             <property name="text">
+              <string>透明度</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1" colspan="2">
+            <widget class="QSlider" name="horizontalSlider">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>数据点标签</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_pointLableVisible">
+             <property name="text">
+              <string>数据点标签可见</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pBtn_LabelColor">
+             <property name="text">
+              <string>数据点标签颜色</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="pBtn_LabelFont">
+             <property name="text">
+              <string>数据点标签字体</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="title">
+           <string>标签格式</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="rBtn_Y">
+             <property name="text">
+              <string>Y点</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="rBtn_XY">
+             <property name="text">
+              <string>( X点，Y点)</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>208</width>
+         <height>626</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/images/axis.png</normaloff>:/images/axis.png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>坐标轴设置Axis</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_18">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="title">
+           <string>轴对象</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="rBtn_XAxies">
+             <property name="text">
+              <string>X轴</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="rBtn_YAxies">
+             <property name="text">
+              <string>Y轴</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="title">
+           <string>轴值范围</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_12">
+           <item row="0" column="0">
+            <widget class="QLabel" name="Axis_maxV">
+             <property name="text">
+              <string>最大值</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QDoubleSpinBox" name="dSBox_maxV"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="Axis_minV">
+             <property name="text">
+              <string>最小值</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QDoubleSpinBox" name="dSBox_minV">
+             <property name="minimum">
+              <double>-50.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="Axis_isVisible">
+             <property name="text">
+              <string>是否可见</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="Axis_range">
+             <property name="text">
+              <string>设置坐标范围</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QGroupBox" name="groupBox_7">
+          <property name="title">
+           <string>轴标题</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_13">
+           <item row="1" column="0">
+            <widget class="QPushButton" name="Axis_font">
+             <property name="text">
+              <string>设置字体</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="Axis_titlesVisible">
+             <property name="text">
+              <string>轴标题是否可见</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="Axis_title"/>
+           </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="Axis_setTitle">
+             <property name="text">
+              <string>设置标题</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="title">
+           <string>轴刻度标签</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_14">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pBtn_style">
+             <property name="text">
+              <string>标签格式</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_style"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pBtn_Fontcolor">
+             <property name="text">
+              <string>文字颜色</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="pBtn_setFont">
+             <property name="text">
+              <string>设置字体</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QCheckBox" name="chk_scaleisVisible">
+             <property name="text">
+              <string>刻度标签是否可见</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QGroupBox" name="groupBox_9">
+          <property name="title">
+           <string> 网格线</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_15">
+           <item row="0" column="0" colspan="2">
+            <widget class="QCheckBox" name="chk_gridLineVisible">
+             <property name="text">
+              <string>网格线是否可见</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pBtn_gridLineColor">
+             <property name="text">
+              <string>主刻度线网格线颜色</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="pBtn_gridLinePen">
+             <property name="text">
+              <string>主刻度线笔</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QGroupBox" name="groupBox_10">
+          <property name="title">
+           <string>坐标轴与Tick</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_16">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_tickcout">
+             <property name="text">
+              <string>Tick个数</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="spinBox_Tickcount"/>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QCheckBox" name="chk_TickLineIsVisible">
+             <property name="text">
+              <string>Tick线是否可见</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="pBtn_lineColor">
+             <property name="text">
+              <string>坐标轴颜色</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="pBtn_linePen">
+             <property name="text">
+              <string>坐标轴线笔</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QGroupBox" name="groupBox_11">
+          <property name="title">
+           <string>MinorTick</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_17">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_minorTickcount">
+             <property name="text">
+              <string>MinorTick个数</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1" colspan="2">
+            <widget class="QSpinBox" name="spinBox_minorTickcount"/>
+           </item>
+           <item row="1" column="0" colspan="3">
+            <widget class="QCheckBox" name="chk_MinorTickLineIsVisible">
+             <property name="text">
+              <string>MinorTick线是否可见</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QPushButton" name="MinorTick_Color">
+             <property name="text">
+              <string>MinorTick网格线颜色</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QPushButton" name="pBtn_minorLinePen">
+             <property name="text">
+              <string>Minor网格线笔</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QChartView" name="cView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>813</width>
+     <height>17</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actFlush"/>
+   <addaction name="actZoomIn"/>
+   <addaction name="actZoomOut"/>
+   <addaction name="actReset"/>
+   <addaction name="actexit"/>
+  </widget>
+  <action name="actFlush">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/flush.png</normaloff>:/images/flush.png</iconset>
+   </property>
+   <property name="text">
+    <string>刷新绘图</string>
+   </property>
+  </action>
+  <action name="actZoomIn">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/zoomIn.png</normaloff>:/images/zoomIn.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="actZoomOut">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/zoomOut.png</normaloff>:/images/zoomOut.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="actReset">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/reset.png</normaloff>:/images/reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>原始大小</string>
+   </property>
+  </action>
+  <action name="actexit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/exit.png</normaloff>:/images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">qchartview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actexit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>313</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

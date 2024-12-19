@@ -1,0 +1,12 @@
+#ifndef MYSAHREDLIB_GLOBAL_H
+#define MYSAHREDLIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(MYSAHREDLIB_LIBRARY)
+#define MYSAHREDLIB_EXPORT Q_DECL_EXPORT
+#else
+#define MYSAHREDLIB_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // MYSAHREDLIB_GLOBAL_H

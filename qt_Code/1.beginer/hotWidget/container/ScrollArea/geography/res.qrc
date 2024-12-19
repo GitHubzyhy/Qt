@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>geography/china.png</file>
+        <file>geography/china.txt</file>
+    </qresource>
+</RCC>
